@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    background-color:#fff;
+    /* font-family: "Font Awesome 6 Free"; */
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Navigation Bar */
+.container-nav{
+    background-color:black;
+    color:#fff;
+    /* height:80px; */
+    width:75vw;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    transition:0.5s;
+    text-transform: uppercase;
+}
+.container-nav-animation{
+    width:85vw;
+}
+.bigTitle{
+    font-size: 1.5rem;
+}
+.brand a{
+    text-decoration: none;
+    color:#fff;
+    transition:0.5s;
+
+}
+.word{
+    display: flex;
+    text-align: center; 
+    letter-spacing: 10px;
+}
+
+.column{
+    flex-direction:column;
+    margin:10px 0;
+}
+
+
+
+.navbar-sections{
+    display: flex;
+}
+.section{
+    transition:0.5s;
+    padding:10px;
+}
+.section-button{
+    text-decoration: none;
+    color:#fff;
+    padding:10px;
+    border:1px solid;
+    border-radius: 10px;
+}
+.section-button:hover{
+    background-color:rgb(152, 152, 162);
+}
+
+.almostHide{
+    opacity:0.3;
+}
+.hide{
+    display:none;
+}
+
+
+
+/* Hamburger button collapsable */
+.collapse-btn{
+    display:none;
+    color:#fff;
+    background-color: black;
+    border:none;
+    text-align: right;
+}
+.burger-menu li{
+    list-style: none;
+    margin:5px;
+    text-align: right;
+}
+.burger-menu a{
+    color:#fff;
+    text-decoration: none;
+    transition:0.5s;
+}
+.burger-menu li:hover a{
+    letter-spacing: 2px;
+    color:grey;
+}
+
+@media (max-width:900px){
+    .collapse-btn{
+        display:block;
+    }
+    .section{
+        display:none;
+    }
+}
+
